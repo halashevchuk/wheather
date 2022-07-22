@@ -14,111 +14,24 @@
   </head>
   <body>
     <div class="container">
-      <a href="url" class="first">Lviv</a>
-      <a href="url" class="second">Kyiv</a>
-      <a href="url" class="thrid">Odessa</a>
-      <a href="url" class="four">Charkiv</a>
+      <h1>New York</h1>
+      <ul>
+        <li> Friaday, 05:00</li>
+        <li> Clear</li>
+      </ul>
+      <div class="row"></div>
+      <div class="col-md-6">
+      <img src="//ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="cloudy"> 12 °C | °F
+     </div>
 
-      <div class="form">
-        <input type="search" id="site-search" name="q" placeholder="Enter city"/>
-        <button type="button" class="btn btn-primary">Search</button>
-          <!-- <p class="close"> &#x2716; </p> -->
-      </div>
-      <div class="container1">
-        <div class="row">
-          <div class="col-6">
-            <p class="city_name">Uzhhorod</p>
-            <p class="time">Friday 21:00</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-6">
-         <p class="table1" ></p>   <p class="table1" id="grad" type="number">☀️17℃</p>   
-         <div class="col-6">
-            <p class="precipitation">Precipitation: 95%</p>
-          </div>
-        </div>
-      </div>
-
-    <div class="container2">
-      <div class="row" id="table">
-        <div class="col-2">
-          <p class="table">Sat</p>
-        </div>
-        <div class="col-2">
-          <p class="table">Sun</p>
-        </div>
-        <div class="col-2">
-          <p class="table">Mon</p>
-        </div>
-        <div class="col-2">
-          <p class="table">Tue</p>
-        </div>
-        <div class="col-2">
-          <p class="table">Wed</p>
-        </div>
-      </div>
-      <div class="row" id="table">
-        <div class="col-2">
-          <p class="table">☁️</p>
-        </div>
-        <div class="col-2">
-          <p class="table">☁️</p>
-        </div>
-        <div class="col-2">
-          <p class="table">☁️</p>
-        </div>
-        <div class="col-2">
-          <p class="table">☀️</p>
-        </div>
-        <div class="col-2">
-          <p class="table">☀️</p>
-        </div>
-      </div>
-      <div class="row" id="table">
-        <div class="col-2">
-          <p class="table">23°</p>
-        </div>
-        <div class="col-2">
-          <p class="table">22°</p>
-        </div>
-        <div class="col-2">
-          <p class="table">21°</p>
-        </div>
-        <div class="col-2">
-          <p class="table">25°</p>
-        </div>
-        <div class="col-2">
-          <p class="table">27°</p>
-        </div>
-      </div>
-    </div>
-    <script>
-let now = new Date();
-let dayName=document.querySelector(".time");
-let time=now.getHours();
-let minutes=now.getMinutes();
-let day=now.getDay();
-let daysOfWeek=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-let currenttDay=daysOfWeek[day];
-dayName.innerHTML=`${currenttDay}, ${time}:${minutes}`;
-
-function replaceCity (event) {
-event.preventDefault();
-  let  cityName=document.querySelector(".city_name");
-  let  searchResult=document.querySelector("#site-search").value;
-    searchResult.trim();
-if (searchResult!==" ") {
-  cityName.innerHTML=`${searchResult}`;
- }
-else{
-alert (`Enter a City`);
-}
-}
- let searchButton = document.querySelector("button");
- searchButton.addEventListener("click", replaceCity);
-
-
-</script>
+      <div class="col-md-6">
+      <ul>
+        <li> 
+       Precipitation: 95%
+       </li>
+       <li> Humidity: 70%</li>
+        <li> Wind: 2km/h/li>
+      </ul>
+     </div>
   </body>
 </html>
